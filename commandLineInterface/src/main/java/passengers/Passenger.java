@@ -1,5 +1,7 @@
 package passengers;
 
+import java.util.UUID;
+
 public class Passenger implements IPassenger {
     //Properties
     private String name;
@@ -11,6 +13,13 @@ public class Passenger implements IPassenger {
         this.contactNumber = contactNumber;
         this.customerID = customerID;
     }
+
+    public String ID(){
+        UUID ID = UUID.randomUUID();
+        String uuidAsString = ID.toString();
+
+    }
+
 
     @Override
     public boolean hasPassengerBeenBookedOnFlight() {
@@ -48,3 +57,5 @@ public class Passenger implements IPassenger {
         this.customerID = id;
     }
 }
+
+
