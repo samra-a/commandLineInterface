@@ -25,6 +25,5 @@ public class BookingAgent implements IBookingAgent {
 
     @Override
     public void bookPassengerToFlight(Passenger passenger, Flight flight) {
-
     }
 }

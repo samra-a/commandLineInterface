@@ -9,6 +9,11 @@ public class Flight implements IFlight {
     private int flightID;
     private ArrayList<Passenger> passengers= new ArrayList<Passenger>();
 
+    public Flight(String destination, int flightID) {
+        this.destination = destination;
+        this.flightID = flightID;
+    }
+
     @Override
     public ArrayList<Passenger> getPassengers() {
         return this.passengers;
