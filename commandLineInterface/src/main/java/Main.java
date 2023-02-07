@@ -9,6 +9,7 @@ public class Main {
 
         scanner = new Scanner(System.in);
 
+
         boolean loop = true;
         System.out.println("Hello, please choose an option");
         System.out.println("");

@@ -21,10 +21,6 @@ public class Passenger  {
 
 
 
-    public boolean hasPassengerBeenBookedOnFlight() {
-            return false;
-    }
-
     //Getters/Setters
 
     public String getName() {
