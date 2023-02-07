@@ -8,10 +8,10 @@ public class Passenger implements IPassenger {
     private int contactNumber;
     private String customerID = ID();
 
-    public Passenger(String name, int contactNumber, String ID) {
+    public Passenger(String name, int contactNumber) {
         this.name = name;
         this.contactNumber = contactNumber;
-        this.customerID = ID;
+        //this.customerID = ID();
     }
 
     public String ID(){
