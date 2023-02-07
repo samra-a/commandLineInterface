@@ -6,7 +6,7 @@ public interface IPassenger {
     public void setName(String name);
     public int getContactNumber();
     public void setContactNumber(int number);
-    public int getCustomerID();
-    void setCustomerId(int id);
+    public String getCustomerID();
+    void setCustomerId(String id);
 
 }

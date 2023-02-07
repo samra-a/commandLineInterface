@@ -6,17 +6,18 @@ public class Passenger implements IPassenger {
     //Properties
     private String name;
     private int contactNumber;
-    private int customerID;
+    private String customerID = ID();
 
-    public Passenger(String name, int contactNumber, int customerID) {
+    public Passenger(String name, int contactNumber, String ID) {
         this.name = name;
         this.contactNumber = contactNumber;
-        this.customerID = customerID;
+        this.customerID = ID;
     }
 
     public String ID(){
         UUID ID = UUID.randomUUID();
-        String uuidAsString = ID.toString();
+        String IDAsString = ID.toString();
+        return "Your UUID is: " + IDAsString;
 
     }
 
@@ -48,12 +49,12 @@ public class Passenger implements IPassenger {
     }
 
     @Override
-    public int getCustomerID() {
+    public String getCustomerID() {
         return this.customerID;
     }
 
     @Override
-    public void setCustomerId(int id) {
+    public void setCustomerId(String id) {
         this.customerID = id;
     }
 }
