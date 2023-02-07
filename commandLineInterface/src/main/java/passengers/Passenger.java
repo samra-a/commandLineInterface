@@ -2,16 +2,16 @@ package passengers;
 
 import java.util.UUID;
 
-public class Passenger implements IPassenger {
+public class Passenger  {
     //Properties
     private String name;
-    private int contactNumber;
+    private String contactNumber;
     private String customerID = ID();
 
-    public Passenger(String name, int contactNumber) {
+    public Passenger(String name, String contactNumber) {
         this.name = name;
         this.contactNumber = contactNumber;
-        //this.customerID = ID();
+        this.customerID = ID();
     }
 
     public String ID(){
@@ -22,38 +22,38 @@ public class Passenger implements IPassenger {
     }
 
 
-    @Override
+
     public boolean hasPassengerBeenBookedOnFlight() {
             return false;
     }
 
     //Getters/Setters
-    @Override
+
     public String getName() {
         return this.name;
     }
 
-    @Override
+
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
-    public int getContactNumber() {
+
+    public String getContactNumber() {
         return this.contactNumber;
     }
 
-    @Override
-    public void setContactNumber(int number) {
+
+    public void setContactNumber(String number) {
         this.contactNumber = number;
     }
 
-    @Override
+
     public String getCustomerID() {
         return this.customerID;
     }
 
-    @Override
+
     public void setCustomerId(String id) {
         this.customerID = id;
     }
