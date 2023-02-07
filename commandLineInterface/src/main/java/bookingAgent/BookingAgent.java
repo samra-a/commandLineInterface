@@ -6,6 +6,8 @@ import passengers.Passenger;
 import java.util.ArrayList;
 
 public class BookingAgent implements IBookingAgent {
+
+    //Properties
     private ArrayList<Flight>flight = new ArrayList<Flight>();
 
     @Override

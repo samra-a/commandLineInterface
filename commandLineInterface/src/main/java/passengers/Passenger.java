@@ -1,6 +1,7 @@
 package passengers;
 
 public class Passenger implements IPassenger {
+    //Properties
     private String name;
     private int contactNumber;
     private int customerID;
@@ -16,6 +17,7 @@ public class Passenger implements IPassenger {
             return false;
     }
 
+    //Getters/Setters
     @Override
     public String getName() {
         return this.name;

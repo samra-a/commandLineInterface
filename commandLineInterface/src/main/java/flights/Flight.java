@@ -5,6 +5,7 @@ import passengers.Passenger;
 import java.util.ArrayList;
 
 public class Flight implements IFlight {
+    //Properties
     private String destination;
     private int flightID;
     private ArrayList<Passenger> passengers= new ArrayList<Passenger>();
@@ -13,6 +14,9 @@ public class Flight implements IFlight {
         this.destination = destination;
         this.flightID = flightID;
     }
+
+    //Getters/Setters
+
 
     @Override
     public ArrayList<Passenger> getPassengers() {
