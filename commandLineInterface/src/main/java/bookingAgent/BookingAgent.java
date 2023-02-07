@@ -5,6 +5,7 @@ import passengers.Passenger;
 
 import java.util.ArrayList;
 
+
 public class BookingAgent {
 
     //Properties
@@ -30,17 +31,22 @@ public class BookingAgent {
     }
 
 
-    public void cancelFlights() {
-
+    public void cancelFlights(Flight flight) {
+            this.flights.remove(flight);
     }
 
 
-    public void bookPassengerToFlight(Passenger passenger, int flightID) {
-        //get passengers from Passenger ArrayList
 
-        //add passengers  to Flight ArrayList
+
+    public void bookPassengerToFlight(Passenger passenger, int flightID) {
+
         //need to loop through all the flights
-        //find the ones with the correct id
-        //add passenegr to flight method
+        int n = flights.size();
+        for (int i = 0; i < n; i++){
+            if(passenger.getCustomerID().equals(flightID){
+                Flight.addPassenger(passenger);
+                System.out.println("Passenger has been booked on flight");
+            }
+        }
     }
 }

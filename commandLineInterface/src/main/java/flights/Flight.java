@@ -19,8 +19,8 @@ public class Flight {
 
     // give all the passengers in the passenger arraylist a flight ID
 
-    public void addPassenger(Passenger passenger){
-
+    public static void addPassenger(Passenger passenger){
+        this.passengers.add(passenger);
     }
 
     public ArrayList<Passenger> getPassengers() {
