@@ -1,7 +1,5 @@
-package bookingAgent;
-
-import flights.Flight;
-import passengers.Passenger;
+//import Flight;
+//import Passenger;
 
 import java.util.ArrayList;
 
@@ -38,13 +36,15 @@ public class BookingAgent {
 
 
 
-    public void bookPassengerToFlight(Passenger passenger, int flightID) {
+    public void bookPassengerToFlight(Passenger customerID, int flightID) {
+//        for (Passenger passenger : passengers) {
+//        }
 
         //need to loop through all the flights
         int n = flights.size();
         for (int i = 0; i < n; i++){
             if(flights.get(i).getFlightID() == flightID){
-                flights.get(i).addPassenger(passenger);
+                flights.get(i).addPassenger(customerID);
 
                 System.out.println("Passenger has been booked on flight");
             }

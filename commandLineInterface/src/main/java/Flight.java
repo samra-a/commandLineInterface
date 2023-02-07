@@ -1,6 +1,4 @@
-package flights;
-
-import passengers.Passenger;
+//import Passenger;
 
 import java.util.ArrayList;
 
@@ -10,7 +8,7 @@ public class Flight {
     private int flightID;
     private ArrayList<Passenger> passengers= new ArrayList<Passenger>();
 
-    public Flight(){String destination, int flightID) {
+    public Flight(String destination, int flightID) {
         this.destination = destination;
         this.flightID = flightID;
     }
