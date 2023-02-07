@@ -43,7 +43,7 @@ public class BookingAgent {
         //need to loop through all the flights
         int n = flights.size();
         for (int i = 0; i < n; i++){
-            if(passenger.getCustomerID().equals(flightID){
+            if(passenger.getCustomerID().equals(flightID)){
                 Flight.addPassenger(passenger);
                 System.out.println("Passenger has been booked on flight");
             }
